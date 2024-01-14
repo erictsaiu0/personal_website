@@ -1,0 +1,87 @@
+/* theme color */
+:root {
+    --section-background-color: #0d0e10;
+    --background-color: #302f2b;
+    --nav-text-color: #757664;
+    --highlight-color: #c0b7a8;
+    --button-text-color: #555648;
+    --text-color: #eee2d4;
+}
+html {
+    background-color: var(--background-color);
+}
+
+/* Header styles */
+header {
+    background-color: var(--section-background-color);
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav home {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
+    color: var(--nav-text-color);
+    font-weight: bold;
+}
+
+nav home:hover {
+    color: var(--highlight-color);
+}
+
+nav a {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    color: var(--nav-text-color);
+}
+
+
+nav a:hover {
+    color: var(--highlight-color);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--highlight-color);
+    transition-duration: 0.5s;
+}
+
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+banner {
+    background-color: var(--section-background-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--text-color);
+}
+
+/* Main content styles */
+main {
+    background: var(--background-color);
+}
+
+section {
+    background-color: var(--section-background-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--section-background-color);
+    text-align: center;
+    padding: 10px 0;
+}
