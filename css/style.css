@@ -73,6 +73,8 @@ h1 {
 /* Main content styles */
 main {
     background: var(--background-color);
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--text-color);
 }
 
 section {
