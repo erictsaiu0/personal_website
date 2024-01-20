@@ -44,8 +44,8 @@ nav a {
 
 nav a:hover {
     color: var(--highlight-color);
-    font-weight: bold;
-    text-shadow: 0 0 5px var(--highlight-color);
+    /* font-weight: bold; */
+    text-shadow: 0 0 10px var(--highlight-color);
     transition-duration: 0.5s;
 }
 
@@ -66,14 +66,16 @@ banner {
 }
 
 h1 {
-    font-family: 'Share Tech Mono', monospace;
+    /* font-family: 'Share Tech Mono', monospace; */
+    /* font-family: 'DotGothic16', sans-serif; */
     color: var(--text-color);
 }
 
 /* Main content styles */
 main {
     background: var(--background-color);
-    font-family: 'Share Tech Mono', monospace;
+    /* font-family: 'Share Tech Mono', monospace; */
+    font-family: 'Noto Sans TC', sans-serif;
     color: var(--text-color);
 }
 
