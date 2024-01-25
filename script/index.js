@@ -278,8 +278,7 @@ async function createRecentWorks(WordsMetadata) {
 }
 
 (async () => {
-    const currentDirectory = window.location.pathname;
-    const topNWorks = await parseTopNWorks(currentDirectory+'works/');
+    const topNWorks = await parseTopNWorks('works/');
     createRecentWorks(topNWorks);
 })();
 // createRecentWorks(parseTopNWorks('works/'));
