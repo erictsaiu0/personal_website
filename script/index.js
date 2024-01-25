@@ -277,6 +277,7 @@ async function createRecentWorks(WordsMetadata) {
     }
 }
 
+console.log('JS loaded');
 (async () => {
     const topNWorks = await parseTopNWorks('works/');
     createRecentWorks(topNWorks);
