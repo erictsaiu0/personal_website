@@ -7,6 +7,7 @@
     --button-text-color: #555648;
     --text-color: #eee2d4;
 }
+
 html {
     background-color: var(--background-color);
 }
@@ -25,7 +26,7 @@ nav ul {
 }
 
 nav home {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', sans-serif;
     font-size: 1.5em;
     color: var(--nav-text-color);
     font-weight: bold;
@@ -36,7 +37,7 @@ nav home:hover {
 }
 
 nav a {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', sans-serif;
     text-align: center;
     color: var(--nav-text-color);
 }
@@ -74,8 +75,7 @@ h1 {
 /* Main content styles */
 main {
     background: var(--background-color);
-    /* font-family: 'Share Tech Mono', monospace; */
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', sans-serif;
     color: var(--text-color);
 }
 
