@@ -51,6 +51,7 @@
 
 // the above code is pesudo code, it is not working code, it is just a reference for me to write the code below
 function parseWorkMetadata(dir) {
+    console.log('[parseWorkMetadata]Parsing metadata for directory:', dir);
     return fetch(dir + 'metadata.json')
         .then(response => response.json())
         .then(metadata => {
@@ -63,6 +64,7 @@ function parseWorkMetadata(dir) {
 }
 
 function getFilesInDirectory(directory) {
+    console.log('[getFilesInDirectory]Getting files in directory:', directory);
     return fetch(directory)
         .then(response => response.text())
         .then(html => {
