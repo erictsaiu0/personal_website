@@ -52,7 +52,7 @@
 // the above code is pesudo code, it is not working code, it is just a reference for me to write the code below
 function parseWorkMetadata(dir) {
     console.log('[parseWorkMetadata]Parsing metadata for directory:', dir);
-    return fetch(dir + 'metadata.json')
+    return fetch('https://raw.githubusercontent.com/erictsai_u0/persional_website/main/' + dir + 'metadata.json')
         .then(response => response.json())
         .then(metadata => {
             metadata.date = new Date(metadata.date);
@@ -65,7 +65,7 @@ function parseWorkMetadata(dir) {
 
 function getFilesInDirectory(directory) {
     console.log('[getFilesInDirectory]Getting files in directory:', directory);
-    return fetch(directory)
+    return fetch('https://raw.githubusercontent.com/erictsai_u0/persional_website/main/'+directory)
         .then(response => response.text())
         .then(html => {
             const parser = new DOMParser();
