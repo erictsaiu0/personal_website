@@ -1,0 +1,86 @@
+{
+    "CCC": {
+        "dirname": "CCC",
+        "title": "Crowd Cloud Crowded",
+        "date": "07-18-2023",
+        "info": "Crowd Cloud Crowded is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    },
+    "GRADIENT_SCOTOMA": {
+        "dirname": "GRADIENT_SCOTOMA",
+        "title": "Gradient Scotoma",
+        "date": "07-18-2023",
+        "info": "How would AI interact with modern art?",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "AI",
+            "black-box characteristic"
+        ]
+    }, 
+    "DUMMY2023":{
+        "dirname": "DUMMY2023",
+        "title": "DUMMY2023",
+        "date": "05-18-2023",
+        "info": "DUMMY2023 is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    }, 
+    "DUMMY2022":{
+        "dirname": "DUMMY2022",
+        "title": "DUMMY2022",
+        "date": "07-18-2022",
+        "info": "DUMMY2022 is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    },
+    "DUMMY2021":{
+        "dirname": "DUMMY2021",
+        "title": "DUMMY2021",
+        "date": "07-18-2021",
+        "info": "DUMMY2021 is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    }, 
+    "DUMMY2020":{
+        "dirname": "DUMMY2020",
+        "title": "DUMMY2020",
+        "date": "07-18-2020",
+        "info": "DUMMY2020 is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    }, 
+    "DUMMY2024":{
+        "dirname": "DUMMY2024",
+        "title": "DUMMY2024",
+        "date": "07-18-2024",
+        "info": "DUMMY2024 is a game about crowdsourcing.",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "e-map",
+            "review"
+        ]
+    }
+}
