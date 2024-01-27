@@ -62,5 +62,49 @@ def build_index_content(top_n=5):
         json.dump(content_dict, f, indent=4)
     return content
 
-# collect_metadata()
+def build_digiart_content():
+    with open('content.json', 'r') as f:
+        content = json.load(f)
+    # collect digiart works, which has "digital-art" in the tag list
+    digiart_content = {}
+    for work in content.items():
+        if 'digital-art' in work[1]['tags']:
+            digiart_content[work[0]] = work[1]
+    # sort by date which the date data is stored in metadata "date" as format "MM-DD-YYYY"
+    digiart_content = sorted(digiart_content.items(), key=lambda x: datetime.strptime(x[1]['date'], '%m-%d-%Y'), reverse=True)
+
+    digiart_content_dict = {}
+    for work in digiart_content:
+        digiart_content_dict[work[0]] = work[1]
+
+    # save as json file
+    with open('digiart_content.json', 'w') as f:
+        json.dump(digiart_content_dict, f, indent=4)
+    return digiart_content
+
+def build_photoart_content():
+    with open('content.json', 'r') as f:
+        content = json.load(f)
+    # collect photoart works, which has "photo-art" in the tag list
+    photoart_content = {}
+    for work in content.items():
+        if 'photography' in work[1]['tags'] or 'photobook' in work[1]['tags']:
+            photoart_content[work[0]] = work[1]
+    # sort by date which the date data is stored in metadata "date" as format "MM-DD-YYYY"
+    photoart_content = sorted(photoart_content.items(), key=lambda x: datetime.strptime(x[1]['date'], '%m-%d-%Y'), reverse=True)
+
+    photoart_content_dict = {}
+    for work in photoart_content:
+        photoart_content_dict[work[0]] = work[1]
+
+    # save as json file
+    with open('photoart_content.json', 'w') as f:
+        json.dump(photoart_content_dict, f, indent=4)
+    return photoart_content
+
+
+collect_metadata()
 build_index_content()
+build_digiart_content()
+build_photoart_content()
+

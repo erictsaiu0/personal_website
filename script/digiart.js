@@ -1,58 +1,4 @@
 
-
-function parseWorkMetadata(dir) {
-    console.log('[parseWorkMetadata]Parsing metadata for directory:', dir);
-    // await fetch('https://raw.githubusercontent.com/erictsaiu0/personal_website/' + dir + 'metadata.json')
-    return fetch(dir + 'metadata.json')
-        .then(response => response.json())
-        .then(metadata => {
-            metadata.date = new Date(metadata.date);
-            return metadata;
-        })
-        .catch(error => {
-            console.error('Error fetching metadata:', error);
-        });
-}
-
-// the dir list is saved in the file 'dir_list.json' in the root directory of the repository
-async function getFilesInDirectory(dir) {
-    console.log('[getFilesInDirectory]Fetching files in directory:', dir);
-    // the dir list is saved in the file 'work_dirs.json' as format: {"0": "ccc", "1": "gradient_scotoma"}
-    // return fetch('https://raw.githubusercontent.com/erictsaiu0/personal_website/work_dirs.json')
-    return await fetch('work_dirs.json')
-        .then(response => response.json())
-        .then(dirList => {
-            // const dirList = JSON.parse(dirListJson);
-            // console.log(dirList);
-            const fileNames = [];
-            for (const key in dirList) {
-                // console.log(key, dirList[key]);
-                fileNames.push(dirList[key]);
-            }
-            return fileNames;
-        })
-        .catch(error => {
-            console.error('Error fetching dir list:', error);
-        });
-}
-
-async function parseTopNWorks(directory, n = 5) {
-    try {
-        const fileNames = await getFilesInDirectory(directory);
-        const topNWorks = [];
-        for (const fileName of fileNames) {
-            const workDirectory = directory + fileName + '/';
-            const workMetadata = await parseWorkMetadata(workDirectory);
-            topNWorks.push(workMetadata);
-        }
-        topNWorks.sort((a, b) => b.date - a.date);
-        // console.log(topNWorks.slice(0, n));
-        return topNWorks.slice(0, n);
-    } catch (error) {
-        console.error('Error fetching top N works:', error);
-    }
-}
-
 function getContentbyJson(path) {
     // read the content from the json file and return the content as parseTopNWorks does
     return fetch(path)
@@ -133,7 +79,7 @@ async function createRecentWorks(WordsMetadata) {
 }
 
 (async () => {
-    const data = await getContentbyJson('index_content.json');
+    const data = await getContentbyJson('digiart_content.json');
     // reconstruct the content by push 
     const content = [];
     for (const key in data) {
