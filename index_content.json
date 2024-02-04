@@ -22,5 +22,29 @@
             "AI",
             "black-box characteristic"
         ]
+    },
+    "UNKNOWNCALLERID": {
+        "dirname": "UNKNOWNCALLERID",
+        "title": "Unknwon Caller ID",
+        "date": "12-03-2022",
+        "info": "How would AI interact with modern art?",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "photobook",
+            "payphone",
+            "map"
+        ]
+    },
+    "THE3RDCOLLAPSE": {
+        "dirname": "THE3RDCOLLAPSE",
+        "title": "The 3rd Collapse",
+        "date": "01-28-2022",
+        "info": "How would AI interact with modern art?",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "photobook",
+            "material decay",
+            "film"
+        ]
     }
 }
