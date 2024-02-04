@@ -93,9 +93,12 @@ async function createRecentWorkCard(WorkMetadata, ImageOnRight = true) {
     // image.src = 'cover.jpg' if the image is in the same directory as the metatdata.json file, else image.src = 'cover.png'
     image.src = 'works/' + WorkMetadata.dirname + '/cover.jpg';
     image.onerror = () => {
-        image.src = 'works/' + WorkMetadata.dirname + '/cover.png';
+        image.src = 'works/' + WorkMetadata.dirname + '/cover.JPG';
         image.onerror = () => {
-            image.src = ''
+            image.src = 'works/' + WorkMetadata.dirname + '/cover.png';
+            image.onerror = () => {
+                image.src = ''
+            }
         }
     }
     
