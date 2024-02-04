@@ -1,4 +1,16 @@
 {
+    "ANALOGRANDOMGENERATOR": {
+        "dirname": "ANALOGRANDOMGENERATOR",
+        "title": "Analog Random Generator",
+        "date": "12-02-2023",
+        "info": "How would AI interact with modern art?",
+        "description": "The artwork description outlines the creative elements and concepts incorporated in a piece of art. It typically includes details about the artist's intentions, techniques used, and the symbolic or thematic aspects of the work. This description provides viewers with insights into the artistic choices made and encourages a deeper understanding of the artwork.",
+        "tags": [
+            "digital-art",
+            "RNG",
+            "dust"
+        ]
+    },
     "CCC": {
         "dirname": "CCC",
         "title": "Crowd Cloud Crowded",
