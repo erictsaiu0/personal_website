@@ -1,8 +1,0 @@
-{
-    "dirname": "ANALOGRANDOMGENERATOR",
-    "title": "Analog Random Generator", 
-    "date": "12-02-2023",
-    "info": "Exploring Analog Randomness through Dust Simulation", 
-    "description": "This work uses dust to mimic analog randomness, transforming digital noise into physical forms. While computer-generated randomness isn't truly random, this device simulates genuine randomness with dust. It also ties to the Infinite Monkey Theorem, suggesting that over time, it can generate any image, including photos from each piece exhibited.", 
-    "tags": ["digital-art", "RNG", "dust"]
-}
