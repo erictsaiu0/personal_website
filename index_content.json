@@ -1,4 +1,16 @@
 {
+    "GOLDFISH": {
+        "dirname": "GOLDFISH",
+        "title": "GOLDFISH",
+        "date": "09-03-2024",
+        "info": "Eternal Remembrance through Burning Paper and Fading Memories",
+        "description": "In Taiwanese folklore, burning paper items can transmit objects to deceased relatives, allowing them to live eternally together. Origami, beyond its religious functions, strengthens familial bonds and heals sorrow. Conversely, as memory declines, recognizing people becomes harder, and familiar faces may fade away, akin to the 'goldfish brain' phenomenon. This work prints photos of the artist from childhood to adulthood on paper money, compiling them into a photo book. Viewers tear out pages, fold them into fish, and burn them, symbolizing the fading memory of loved ones. The burning fish carry the artist's image to the other side, aiming for eternal remembrance.",
+        "tags": [
+            "photobook",
+            "Joss paper Origami",
+            "memory"
+        ]
+    },
     "ANALOGRANDOMGENERATOR": {
         "dirname": "ANALOGRANDOMGENERATOR",
         "title": "Analog Random Generator",
@@ -45,18 +57,6 @@
             "digital-art",
             "AI",
             "black-box characteristic"
-        ]
-    },
-    "UNKNOWNCALLERID": {
-        "dirname": "UNKNOWNCALLERID",
-        "title": "Unknwon Caller ID",
-        "date": "12-03-2022",
-        "info": "Mapping Urban Communication Lifelines through Disappearing Public Telephones",
-        "description": "The piece captures public telephones within the author's urban environment, documenting the GPS coordinates of each one. As communication technology evolves, public telephones have become overlooked objects. The author seeks to empathize with those who have lost access to communication devices like mobile phones, exploring the sentiment of searching for communication lifelines in the city. By locating these disappearing public telephones, they ultimately create a survival map of urban communication spots.",
-        "tags": [
-            "photobook",
-            "payphone",
-            "map"
         ]
     }
 }
