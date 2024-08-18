@@ -127,17 +127,6 @@ section {
     background-color: var(--section-background-color);
 }
 
-section h3 {
-    opacity: 0.5;
-}
-
-section p {
-    opacity: 0.8;
-}
-
-section h6 {
-    opacity: 0.3;
-}
 
 /* Footer styles */
 footer {
