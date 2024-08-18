@@ -11,18 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/about.js"></script>
 </head>
 <body class="flex flex-col min-h-screen">
     <header class="fixed inset-x-0 top-0">
-        <nav class="flex items-center justify-between py-2 px-4">
+        <nav class="">
             <!-- <h1 class="flex-row w-1/2">Eric Tsai</h1> -->
-            <home class="flex-row w-1/2"><a href="index.html">Eric Tsai</a></home>
-            <ul class="flex-row grow py-2">
-                <li><a href="photoart.html" class="">Photography Artwork</a></li>
-                <li><a href="digiart.html" class="">Digital Artwork</a></li>
-                <li><a href="about.html" class="">About Me</a></li>
-            </ul>
+            <div class="flex items-center justify-between py-2 px-4">
+                <home class="flex-row w-1/2"><a href="index.html">Eric Tsai</a></home>
+                <button class="md:hidden" onclick="toggleMenu()" id="menu-btn">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M4 6H20M4 12H20M4 18H20"/>
+                    </svg>
+                </button>
+                <ul class="hidden md:flex md:flex-row md:grow py-2" id="menu">
+                    <li><a href="photoart.html" class="">Photography Artwork</a></li>
+                    <li><a href="digiart.html" class="">Digital Artwork</a></li>
+                    <li><a href="about.html" class="">About Me</a></li>
+                </ul>
+            </div>
         </nav>
+        <ul class="flex-col pr-4 md:hidden" id="mobile-menu">
+            <li><a href="photoart.html" class="collapse">Photography Artwork</a></li>
+            <li><a href="digiart.html" class="collapse">Digital Artwork</a></li>
+            <li><a href="about.html" class="collapse">About Me</a></li>
+        </ul>
     </header>
     <main class="flex flex-col px-4 py-8 items-stretch flex-grow">
         <section class=" place-content-center place-items-center w-full">

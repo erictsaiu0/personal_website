@@ -17,12 +17,31 @@ header {
     background-color: var(--section-background-color);
 }
 
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+}
 
+header a {
+    font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', sans-serif;
+    color: var(--nav-text-color);
+}
+
+header a:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 10px var(--highlight-color);
+    transition-duration: 0.5s;
+}
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+}
+nav ul:hover {
+    color: var(--highlight-color);
 }
 
 nav home {
@@ -36,12 +55,36 @@ nav home:hover {
     color: var(--highlight-color);
 }
 
+nav svg{
+    /*  fill="none" xmlns="http://www.w3.org/2000/svg" */
+    fill: none;
+    stroke: var(--nav-text-color);
+    /* stroke-width="2" stroke-linecap="round" stroke-linejoin="round" */
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+nav svg:hover {
+    stroke: var(--highlight-color);
+    stroke-width: 3;
+    transition-duration: 0.5s;
+}
+
 nav a {
     font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', sans-serif;
     text-align: center;
     color: var(--nav-text-color);
 }
+nav button{
+    color: var(--button-text-color);
+}
 
+nav button:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 10px var(--highlight-color);
+    transition-duration: 0.5s;
+}
 
 nav a:hover {
     color: var(--highlight-color);
@@ -49,6 +92,7 @@ nav a:hover {
     text-shadow: 0 0 10px var(--highlight-color);
     transition-duration: 0.5s;
 }
+
 
 
 body, ul {
