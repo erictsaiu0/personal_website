@@ -34,7 +34,7 @@ function getContentbyJson(path) {
 
 async function createRecentWorkCard(WorkMetadata, device_width, ImageOnRight = true) {
     const title = document.createElement('h2');
-    title.classList.add('text-2xl');
+    title.classList.add('text-2xl', 'font-black');
     const info = document.createElement('h3');
     info.classList.add('pt-4');
     const description = document.createElement('p');
@@ -95,14 +95,14 @@ async function createRecentWorkCard(WorkMetadata, device_width, ImageOnRight = t
     }
     else{
         const RecentWorkText = document.createElement('div');
-        RecentWorkText.classList.add('pl-12', 'pr-12');
+        RecentWorkText.classList.add('pl-2', 'pr-2', 'mt-4');
         RecentWorkText.appendChild(title);
         RecentWorkText.appendChild(info);
         RecentWorkText.appendChild(description);
         RecentWorkText.appendChild(tags);
         
         const RecentWorkImage = document.createElement('div');
-        RecentWorkImage.classList.add('p-4', 'flex', 'justify-center');
+        RecentWorkImage.classList.add('p-2', 'flex', 'justify-center');
         RecentWorkImage.appendChild(image);
         
         const RecentWork = document.createElement('div');
@@ -111,7 +111,7 @@ async function createRecentWorkCard(WorkMetadata, device_width, ImageOnRight = t
         RecentWork.appendChild(RecentWorkText);
 
         const section = document.createElement('section');
-        section.classList.add('py-8', 'px-8', 'mb-8', 'rounded-2xl');
+        section.classList.add('py-4', 'px-4', 'mb-4', 'rounded-2xl');
         section.appendChild(RecentWork);
 
         main = document.querySelector('main');
@@ -119,6 +119,7 @@ async function createRecentWorkCard(WorkMetadata, device_width, ImageOnRight = t
     }
 
 }
+
 async function createRecentWorks(WordsMetadata) {
     const metadataArray = Array.from(WordsMetadata); // Convert WordsMetadata to an array if it is not already an array
     let imageOnRight = false; // Set initial value of ImageOnRight parameter
