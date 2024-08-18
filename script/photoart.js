@@ -32,7 +32,7 @@ function getContentbyJson(path) {
         });
 }
 
-async function createRecentWorkCard(WorkMetadata, ImageOnRight = true) {
+async function createRecentWorkCard(WorkMetadata, device_width, ImageOnRight = true) {
     const title = document.createElement('h2');
     title.classList.add('text-2xl');
     const info = document.createElement('h3');
@@ -46,13 +46,6 @@ async function createRecentWorkCard(WorkMetadata, ImageOnRight = true) {
     info.innerHTML = WorkMetadata.info;
     description.innerHTML = WorkMetadata.description;
     tags.innerHTML = WorkMetadata.tags.map(tag => '#' + tag).join(' ');
-
-    const RecentWorkText = document.createElement('div');
-    RecentWorkText.classList.add('w-1/2', 'pl-12', 'pr-12');
-    RecentWorkText.appendChild(title);
-    RecentWorkText.appendChild(info);
-    RecentWorkText.appendChild(description);
-    RecentWorkText.appendChild(tags);
 
     const image = document.createElement('img');
     image.classList.add('rounded-2xl', 'float-left');
@@ -69,28 +62,62 @@ async function createRecentWorkCard(WorkMetadata, ImageOnRight = true) {
         }
     }
     
-    const RecentWorkImage = document.createElement('div');
-    RecentWorkImage.classList.add('w-1/2', 'p-4', 'flex', 'justify-center');
-    RecentWorkImage.appendChild(image);
+    // for not smarthphone device
+    if (device_width > 640) {
+        const RecentWorkText = document.createElement('div');
+        RecentWorkText.classList.add('w-1/2', 'pl-12', 'pr-12');
+        RecentWorkText.appendChild(title);
+        RecentWorkText.appendChild(info);
+        RecentWorkText.appendChild(description);
+        RecentWorkText.appendChild(tags);
+        
+        const RecentWorkImage = document.createElement('div');
+        RecentWorkImage.classList.add('w-1/2', 'p-4', 'flex', 'justify-center');
+        RecentWorkImage.appendChild(image);
+        
+        const RecentWork = document.createElement('div');
+        RecentWork.classList.add('flex', 'flex-row', 'place-content-center', 'place-items-center', 'w-full');
+        if (ImageOnRight) {
+            RecentWork.appendChild(RecentWorkText);
+            RecentWork.appendChild(RecentWorkImage);
+        } else {
+            RecentWork.appendChild(RecentWorkImage);
+            RecentWork.appendChild(RecentWorkText);
+        }
+        // RecentWork.appendChild(RecentWorkText);
+        // RecentWork.appendChild(RecentWorkImage);
+        const section = document.createElement('section');
+        section.classList.add('py-8', 'px-8', 'mb-8', 'rounded-2xl');
+        section.appendChild(RecentWork);
 
-    const RecentWork = document.createElement('div');
-    RecentWork.classList.add('flex', 'flex-row', 'place-content-center', 'place-items-center', 'w-full');
-    if (ImageOnRight) {
-        RecentWork.appendChild(RecentWorkText);
-        RecentWork.appendChild(RecentWorkImage);
-    } else {
-        RecentWork.appendChild(RecentWorkImage);
-        RecentWork.appendChild(RecentWorkText);
+        main = document.querySelector('main');
+        main.appendChild(section);
     }
-    // RecentWork.appendChild(RecentWorkText);
-    // RecentWork.appendChild(RecentWorkImage);
+    else{
+        const RecentWorkText = document.createElement('div');
+        RecentWorkText.classList.add('pl-12', 'pr-12');
+        RecentWorkText.appendChild(title);
+        RecentWorkText.appendChild(info);
+        RecentWorkText.appendChild(description);
+        RecentWorkText.appendChild(tags);
+        
+        const RecentWorkImage = document.createElement('div');
+        RecentWorkImage.classList.add('p-4', 'flex', 'justify-center');
+        RecentWorkImage.appendChild(image);
+        
+        const RecentWork = document.createElement('div');
+        RecentWork.classList.add('flex', 'flex-col', 'place-content-center', 'place-items-center', 'w-full');
+        RecentWork.appendChild(RecentWorkImage);
+        RecentWork.appendChild(RecentWorkText);
 
-    const section = document.createElement('section');
-    section.classList.add('py-8', 'px-8', 'mb-8', 'rounded-2xl');
-    section.appendChild(RecentWork);
+        const section = document.createElement('section');
+        section.classList.add('py-8', 'px-8', 'mb-8', 'rounded-2xl');
+        section.appendChild(RecentWork);
 
-    main = document.querySelector('main');
-    main.appendChild(section);
+        main = document.querySelector('main');
+        main.appendChild(section);
+    }
+
 }
 
 async function createRecentWorks(WordsMetadata) {
